@@ -14,7 +14,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Dagger 2 Playground"
 include ':app'
-include ':common'
 include ':data__a'
 include ':data__b'
 include ':data__c'
+include ':core'

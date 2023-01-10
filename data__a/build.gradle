@@ -6,4 +6,6 @@ plugins {
 
 apply from: "../common-data-module.gradle"
 
-dependencies {}
+dependencies {
+    implementation project(":core")
+}
