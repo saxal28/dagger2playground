@@ -13,10 +13,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/core" />
-            <option value="$PROJECT_DIR$/data__a" />
-            <option value="$PROJECT_DIR$/data__b" />
-            <option value="$PROJECT_DIR$/data__c" />
-            <option value="$PROJECT_DIR$/feature__a" />
+            <option value="$PROJECT_DIR$/feature__order" />
           </set>
         </option>
       </GradleProjectSettings>

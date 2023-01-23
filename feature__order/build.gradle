@@ -1,0 +1,13 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+apply from: "../common-feature-module.gradle"
+
+// feature a depends on data__a and data__b
+
+dependencies {
+    implementation project(":core")
+}
