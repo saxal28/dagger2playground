@@ -16,3 +16,4 @@ rootProject.name = "Dagger 2 Playground"
 include ':app'
 include ':core'
 include ':feature__order'
+include ':data__order'
