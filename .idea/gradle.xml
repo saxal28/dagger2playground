@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/data__order" />
+            <option value="$PROJECT_DIR$/data__subscriptions" />
             <option value="$PROJECT_DIR$/feature__order" />
           </set>
         </option>

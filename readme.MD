@@ -25,6 +25,44 @@
 - you do not have to create a data module for a feature whose data will not be shared.
 - only create data module for feature if it will be shared
 - data_modules should be self-encapsulating
+- core can be inherited by all modules
+
+### Module Structure
+
+#### Data Module
+
+responsibilities:
+- data
+- networking
+- business logic
+
+layout:
+- **di** (dependency injection)
+- **networking**
+  - repository
+  - service
+  - dto
+  - data class
+- **cache**
+  - dao
+  - data class
+  - entity
+  - database
+- **usecase** (single class responsible for getting network / cache data)
+  - exportable / used by the feature modules
+- **common** (shared at the data class level)
+
+#### Feature Module
+
+responsibilities:
+- ui / layout
+- incorporating data modules
+
+layout:
+- **di** (dependency injection)
+- **screens**
+  - 
+- common (for composables specific / shared at the module level)
 
 ### Panera Feature Modules and Dependencies (v1)
 
@@ -77,6 +115,7 @@ components:
 dependencies:
 - core data               (core)
 - core ui  (core__ui)     (core__ui)
+- subscriptions data      (data__subscriptions)
 
 screens:
 - SubscriptionsLanding
