@@ -9,7 +9,5 @@ apply from: "../common-feature-module.gradle"
 // feature a depends on data__a and data__b
 
 dependencies {
-    implementation project(":data__a")
-    implementation project(":data__b")
     implementation project(":core")
 }

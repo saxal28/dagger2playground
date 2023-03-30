@@ -1,13 +1,12 @@
 package com.saxaindustries.feature__a.dagger
 
-import com.saxaindustries.data__a.dagger.DataAModule
-import com.saxaindustries.data__b.dagger.DataBModule
+import com.saxaindustries.core.dagger.CoreComponent
+import com.saxaindustries.feature__a.FeatureAActivity
 import dagger.Component
 import javax.inject.Singleton
 
-
 @Singleton
-@Component(modules = [DataAModule::class, DataBModule::class])
+@Component(dependencies = [CoreComponent::class])
 interface FeatureAComponent {
-
+    fun inject(featureAActivity: FeatureAActivity)
 }

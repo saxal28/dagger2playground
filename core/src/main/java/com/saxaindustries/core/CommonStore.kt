@@ -6,10 +6,6 @@ import javax.inject.Inject
 
 class CommonStore @Inject constructor() {
 
-    init {
-        Log.d("Common STORE", "INIT ${Date().time}")
-    }
-
     fun sayHello() {
         Log.d("COMMON STORE", "Hello! ${this.hashCode()}")
     }
